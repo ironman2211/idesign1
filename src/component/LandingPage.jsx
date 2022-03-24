@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../component/css/landingPage.css";
 
 function ProjectDetail(props) {
@@ -12,30 +12,18 @@ function ProjectDetail(props) {
       <div
         style={{
           borderRadius: "5px",
-          //   border: "3px solid #ededed",
           margin: "1em 1.2em",
         }}
       >
-        <div
-          style={{
-            margin: "1em",
-            padding: "1em 0 0",
-            // width: "90%",
-            display: "flex",
-            borderBottom: "1px solid #888888",
-          }}
-        >
+        <div className="project-navigator">
           <button
             id="1"
             className="project"
             style={{
-              padding: "0.5em",
               border: "none",
               borderRadius: "2px",
               borderBottom: projectId === "1" ? "5px solid #3B5998" : "none",
               height: "100%",
-              marginRight: "1em",
-              fontSize: "15px",
               backgroundColor: "transparent",
               color: projectId === "1" ? "#3B5998" : "#888888",
             }}
@@ -47,13 +35,10 @@ function ProjectDetail(props) {
             id="2"
             className="project"
             style={{
-              padding: "0.5em",
               border: "none",
               borderRadius: "2px",
               borderBottom: projectId === "2" ? "5px solid #3B5998" : "none",
               height: "100%",
-              marginRight: "1em",
-              fontSize: "15px",
               backgroundColor: "transparent",
               color: projectId === "2" ? "#3B5998" : "#888888",
             }}
@@ -65,13 +50,10 @@ function ProjectDetail(props) {
             id="3"
             className="project"
             style={{
-              padding: "0.5em",
               border: "none",
               borderRadius: "2px",
               borderBottom: projectId === "3" ? "5px solid #3B5998" : "none",
               height: "100%",
-              marginRight: "1em",
-              fontSize: "15px",
               backgroundColor: "transparent",
               color: projectId === "3" ? "#3B5998" : "#888888",
             }}
@@ -80,34 +62,44 @@ function ProjectDetail(props) {
             Project 3
           </button>
         </div>
-        <div style={{ boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.25)", padding: "1em 0", borderRadius: "10px"}}>
+        <div
+          style={{
+            boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.25)",
+            padding: "1em 0",
+            borderRadius: "10px",
+          }}
+        >
           <div style={{ margin: "1em 1.5em" }} className="project_main">
             <h3>Project Title</h3>
             <span>Building Name</span> <span>City</span>
           </div>
-          <div style={{ margin: "1em", display: "flex" }}>
-            <div style={{ margin: "0.5em", width: "60%" }}>
+          <div className="image-box">
+            <div className="head-image">
               <img
-                style={{ width: "100%", height: "100%", borderRadius: "5px" }}
                 src="https://perkinswill.com/wp-content/uploads/2022/03/WM_desktop_final_02-scaled.jpg"
                 alt=""
               />
             </div>
             <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                flexDirection: "column",
-                width: "40%",
-              }}
+              className="secondary-image"
             >
               <img
-                style={{ margin: "3px", height: "195px", borderRadius: "5px" }}
+                style={{
+                  margin: "5px 3px",
+                  height: "50%",
+                  objectFit: "cover",
+                  borderRadius: "5px",
+                }}
                 src="https://perkinswill.com/wp-content/uploads/2022/03/WM_desktop_final_02-scaled.jpg"
                 alt=""
               />
               <img
-                style={{ margin: "3px", height: "195px", borderRadius: "5px" }}
+                style={{
+                  margin: "5px 3px ",
+                  height: "50%",
+                  objectFit: "cover",
+                  borderRadius: "5px",
+                }}
                 src="https://perkinswill.com/wp-content/uploads/2022/03/WM_desktop_final_02-scaled.jpg"
                 alt=""
               />
@@ -123,23 +115,14 @@ function ProjectPage() {
   const [popupDisplay, setpopupDisplay] = useState(false);
   return (
     <>
-      <div style={{ width: "80%", margin: "1em auto" }}>
-        <div style={{ display: "flex" }}>
-          <div style={{ width: "65%" }}>
+      <div className="project-page">
+        <div className="project-page-lower">
+          <div className="project-container">
             <ProjectDetail />
           </div>
 
-          <div style={{ width: "35%", margin: "0 1em 0 0" }}>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                borderRadius: "5px",
-                margin: "1em 0 0",
-                marginTop: "18%",
-                boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.25)",
-              }}
-            >
+          <div className="info-head">
+            <div className="info-container">
               <div
                 style={{
                   display: "flex",
@@ -156,16 +139,7 @@ function ProjectPage() {
                     alt=""
                   />
                 </div>
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    padding: "0 1em",
-                    margin: "1em",
-                    // width: "100%",
-                    justifyContent: "center",
-                  }}
-                >
+                <div className="info-text">
                   <h3>ABC Design Firm</h3>
                   <p>2987356223</p>
                   <p>saket, New Delhi</p>
@@ -181,12 +155,12 @@ function ProjectPage() {
                   width: "100%",
                   margin: "0.2em 0",
                   padding: "0.4em",
-                  fontSize: "20px",
+                  fontSize: "15px",
                   borderRadius: "5px",
                   backgroundColor: "#3c5899",
                   border: "2px solid #3c5899",
                   color: "white",
-                //   border: "none",
+                  //   border: "none",
                   lineHeight: "30px",
                 }}
               >
@@ -202,7 +176,7 @@ function ProjectPage() {
                   padding: "0.4em",
                   borderRadius: "5px",
                   border: "2px solid #3c5899",
-                  fontSize: "20px",
+                  fontSize: "15px",
                   color: "#3c5899",
                   backgroundColor: "white",
                   lineHeight: "30px",
@@ -222,8 +196,8 @@ function ProjectPage() {
           alignItems: "center",
           backgroundColor: "rgba(0,0,0,0.5)",
           position: "fixed",
-          width: "100vw",
-          height: "100vh",
+          width: "100%",
+          height: "100%",
           top: "0px",
           left: "0px",
         }}
@@ -235,32 +209,31 @@ function ProjectPage() {
       >
         <div
           className="form"
-          style={{
-            backgroundColor: "white",
-            borderRadius: "5px",
-            display: "flex",
-            padding: "2em",
-            flexDirection: "column",
-            minWidth: "280px",
-            width: "30%",
-          }}
         >
-          <h1>Sign Up</h1>
-          <label for="#email" style={{ fontSize: "15px", marginTop: "1em" }}>
+          <h2>Sign Up</h2>
+          <label for="#email" style={{ fontSize: "15px", margin: "1em 0" }}>
             Email
           </label>
-          <input type="email" id="email" style={{ padding: "1em" }} />
-          <label for="#password" style={{ fontSize: "15px", marginTop: "1em" }}>
+          <input
+            type="email"
+            id="email"
+            style={{ padding: "0.9em", borderRadius: "7px" }}
+          />
+          <label for="#password" style={{ fontSize: "15px", margin: "1em 0" }}>
             Passwod
           </label>
-          <input type="password" id="password" style={{ padding: "1em" }} />
+          <input
+            type="password"
+            id="password"
+            style={{ padding: "0.9em", borderRadius: "7px" }}
+          />
           <button
             style={{
               width: "100%",
               margin: "0.2em",
               marginTop: "1em",
               padding: "0.4em",
-              fontSize: "20px",
+              fontSize: "15px",
               borderRadius: "5px",
               backgroundColor: "#3c5899",
               color: "white",
@@ -276,7 +249,7 @@ function ProjectPage() {
               justifyContent: "center",
               alignItems: "center",
               color: "dddddd",
-              fontSize: "15px",
+              fontSize: "12px",
             }}
           >
             <span
@@ -295,9 +268,7 @@ function ProjectPage() {
                 margin: "1em",
                 backgroundColor: "#888888",
               }}
-            >
-              -
-            </span>
+            ></span>
           </div>
           <button
             style={{
@@ -306,7 +277,7 @@ function ProjectPage() {
               padding: "0.4em",
               borderRadius: "5px",
               border: "2px solid #888888",
-              fontSize: "20px",
+              fontSize: "15px",
               color: "#999999",
               backgroundColor: "white",
             }}
