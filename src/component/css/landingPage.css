@@ -116,6 +116,7 @@ p {
   }
   .info-container {
     margin-top: 30%;
+    display: flex;
   }
 
   .info-text {
@@ -132,7 +133,7 @@ p {
   }
 }
 
-@media (min-width: 425px) and (max-width: 768px){
+@media (min-width: 425px) and (max-width: 767px){
     .icons{
         display: none;
     }
@@ -276,6 +277,7 @@ p {
 
   .form{
       width: 50%;
+      margin: 1.2em;
   }
  
 
