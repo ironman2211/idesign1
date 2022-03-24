@@ -190,16 +190,10 @@ function ProjectPage() {
       </div>
       <div
         id="close"
+        className="close"
         style={{
           display: popupDisplay ? "flex" : "none",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: "rgba(0,0,0,0.5)",
-          position: "fixed",
-          width: "100%",
-          height: "100%",
-          top: "0px",
-          left: "0px",
+          
         }}
         onClick={(e) => {
           if (e.target.id === "close") {
