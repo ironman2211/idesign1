@@ -12,18 +12,23 @@ const Navbar = () => {
 
           <div className="icons">
             <i
-              class="fa fa-shopping-cart"
+              class="fa icon fa-shopping-cart"
               style={{ background: "#225AF2" }}
               aria-hidden="true"
             ></i>
             <i
-              class="fa fa-heart"
+              class="fa icon fa-heart"
               style={{ background: "#F2226A" }}
               aria-hidden="true"
             ></i>
             <i
-              class="fa fa-bell"
+              class="fa icon fa-bell"
               style={{ background: "#FFDC00" }}
+              aria-hidden="true"
+            ></i>
+            <i
+              style={{ background: "#3B5998" }}
+              class="fa icon fa-user-circle"
               aria-hidden="true"
             ></i>
           </div>

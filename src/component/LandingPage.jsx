@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../component/css/landingPage.css";
+import { Link } from "react-router-dom";
 
 function ProjectDetail(props) {
   const [projectId, setProjectId] = useState("1");
@@ -193,7 +194,6 @@ function ProjectPage() {
         className="close"
         style={{
           display: popupDisplay ? "flex" : "none",
-          
         }}
         onClick={(e) => {
           if (e.target.id === "close") {
@@ -201,9 +201,7 @@ function ProjectPage() {
           }
         }}
       >
-        <div
-          className="form"
-        >
+        <div className="form">
           <h2>Sign Up</h2>
           <label for="#email" style={{ fontSize: "15px", margin: "1em 0" }}>
             Email
@@ -221,21 +219,24 @@ function ProjectPage() {
             id="password"
             style={{ padding: "0.9em", borderRadius: "7px" }}
           />
-          <button
-            style={{
-              width: "100%",
-              margin: "0.2em",
-              marginTop: "1em",
-              padding: "0.4em",
-              fontSize: "15px",
-              borderRadius: "5px",
-              backgroundColor: "#3c5899",
-              color: "white",
-              border: "none",
-            }}
-          >
-            Create Account
-          </button>
+          <Link to="/exp">
+            <button
+              style={{
+                width: "100%",
+                margin: "0.2em",
+                marginTop: "1em",
+                padding: "0.5em",
+                fontSize: "15px",
+                borderRadius: "5px",
+                backgroundColor: "#3c5899",
+                color: "white",
+                border: "none",
+              }}
+            >
+              Create Account
+            </button>
+          </Link>
+
           <div
             style={{
               display: "flex",
@@ -268,7 +269,7 @@ function ProjectPage() {
             style={{
               width: "100%",
               margin: "0.2em",
-              padding: "0.4em",
+              padding: "0.5em",
               borderRadius: "5px",
               border: "2px solid #888888",
               fontSize: "15px",

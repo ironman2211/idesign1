@@ -221,7 +221,7 @@ p {
   }
 
   .project{
-      padding: 0 1em;
+      /* padding: 0 1em; */
       font-size: 13px;
       min-width: 70px;
       margin-right: 0.2em;
@@ -305,7 +305,7 @@ p {
   }
 
   .project{
-      padding: 0 1em;
+      /* padding: 0 1em; */
       font-size: 13px;
       min-width: 70px;
       margin-right: 0.2em;
@@ -389,7 +389,6 @@ p {
   }
 
   .project{
-      padding: 0 1em;
       font-size: 13px;
       min-width: 70px;
       margin-right: 0.2em;
