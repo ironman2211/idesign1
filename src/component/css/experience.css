@@ -1,7 +1,8 @@
 .experience {
-  width: 100%;
-  margin: 2em 1em;
+  /* width: 100%; */
+  margin: 1.1em 1em;
   display: flex;
+  overflow-x: hidden;
 }
 
 .experience_left {
@@ -63,16 +64,20 @@
 }
 
 .selector select {
-  padding: 0.5em;
+  padding: 0.7em;
   margin-right: 1em;
   border: none;
   border-radius: 5px;
-  width: 70%;
+  width: 70%; 
   font-size: 1.1em;
 }
 
+option{
+  padding: 1.1em !important;
+}
+
 #next {
-  padding: 0.5em 2em;
+  padding: 0.7em 2em;
   border: none;
   margin: 0;
   color: white;

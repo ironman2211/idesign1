@@ -25,7 +25,7 @@ const ZoomConsultTwo = () => {
               </div>
               <p>Experience</p>
             </div>
-            <div className="bar"></div>
+            <div style={{ backgroundColor: "#2cbf81" }} className="bar"></div>
             <div className="progress">
               <div
                 style={{
@@ -43,7 +43,7 @@ const ZoomConsultTwo = () => {
               </div>
               <p>Zoom Consultant</p>
             </div>
-            <div className="bar"></div>
+            <div style={{ backgroundColor: "#2cbf81" }} className="bar"></div>
             <div className="progress">
               <div
                 style={{

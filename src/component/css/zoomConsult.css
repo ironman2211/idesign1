@@ -1,6 +1,6 @@
 .zoom{
-    width: 100%;
-    margin: 2em 1em;
+    /* width: 100%; */
+    margin: 1.1em 1em;
     display: flex;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .container_text{
-    width: 60%;
+    width: 65%;
     display: flex;
     align-items: center;
     justify-content: center;

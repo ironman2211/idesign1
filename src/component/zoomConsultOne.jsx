@@ -25,10 +25,7 @@ const ZoomConsultOne = () => {
               </div>
               <p>Experience</p>
             </div>
-            <div
-              className= "bar"
-
-            ></div>
+            <div style={{ backgroundColor: "#2cbf81" }} className="bar"></div>
             <div className="progress">
               <div
                 style={{
@@ -46,9 +43,7 @@ const ZoomConsultOne = () => {
               </div>
               <p>Zoom Consultant</p>
             </div>
-            <div
-              className="bar"
-            ></div>
+            <div className="bar" style={{ backgroundColor: "#2cbf81" }}></div>
             <div className="progress">
               <div
                 style={{
@@ -67,7 +62,7 @@ const ZoomConsultOne = () => {
           </div>
         </div>
         <div className="zoom_right">
-          <div className="container_text" style={{alignItems: "flex-start"}}>
+          <div className="container_text" style={{ alignItems: "flex-start" }}>
             <span>
               Please Answer a few question as we load the Edit Page (it will
               take 2 mins)

@@ -25,7 +25,7 @@ const ZoomConsult = () => {
               </div>
               <p>Experience</p>
             </div>
-            <div className="bar"></div>
+            <div style={{ backgroundColor: "#2cbf81" }} className="bar"></div>
             <div className="progress">
               <div
                 style={{
