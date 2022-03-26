@@ -53,9 +53,11 @@ const ZoomConsultTwo = () => {
                   border: "1px solid green",
                   textAlign: "center",
                   borderRadius: "100%",
+                  background:
+                    "linear-gradient(180deg, #2CBF81 0%, #178556 100%)",
                 }}
               >
-                3
+                <i class="fa fa-check" aria-hidden="true"></i>
               </div>
               <p>Design Fees</p>
             </div>
