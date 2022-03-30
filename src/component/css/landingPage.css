@@ -4,6 +4,7 @@
     display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 h3 {
   margin: 0.2em;
@@ -302,7 +303,7 @@ p {
   }
 
   .close{
-      width: 90%;
+      width: 100%;
   }
  
 
@@ -437,9 +438,8 @@ p {
     align-items: center;
     flex-direction: column; 
     justify-content: space-between;
-
+   
   }
-  .editt button{
-    width:10px;
-  }
+  
+ 
 }

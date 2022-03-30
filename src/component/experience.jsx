@@ -18,6 +18,7 @@ class Experience extends Component {
           <div className="progressBar">
             <div className="progress active">
               <div
+              className="styleCircle"
                 style={{
                   padding: "1em",
                   width: "15px",

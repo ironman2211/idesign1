@@ -4,6 +4,8 @@
   height: 90vh;
   background-color: #3b5998 ;
   width: 100%;
+  
+  overflow:hidden;
 }
 
 .experience_left {
@@ -109,21 +111,20 @@ option{
 
 @media (min-width: 320px) and (max-width: 767px) {
   .experience {
-    width: auto;
     display: flex;
     flex-direction: column;
+    gap:10px;
     align-items: center;
   }
 
   .experience_left {
-    width: 90%;
-    height: fit-content;
-    margin: 1em 0;
+    width: 100%;
+    height: 18vh;
   }
 
   .experience_right {
     width: 90%;
-    height: fit-content;
+    height: 80vh;
   }
 
   .progressBar {
@@ -133,9 +134,17 @@ option{
   }
 
   .progress {
-    z-index: -2;
+    z-index: 0;
     flex-direction: column;
     align-items: center;
+  }
+  .styleCircle{
+
+                  width: "15px";
+                  height: "15px";
+                  border: "1px solid white";
+                  background: "white";
+               color:green;
   }
 
   .progress p {
@@ -178,4 +187,44 @@ option{
   padding: 0.3em 1em;
   font-weight: 400;
 }
+}
+@media (max-width: 415px){
+
+  .experience{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: space-between;
+
+  }
+  .experience_right {
+    width: 100vw;
+    height: 100vh;  
+  }
+  .experience_right span {
+    font-size: 15px;
+    font-weight: 500;
+    color:rgba(59, 89, 152, 0.75);
+  
+    width: 350px;
+    margin-top: 50px;
+  }
+  
+  .experience_right p {
+    font-size: 1.5em;
+margin: 200px;
+    margin: 10px 10px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    
+    width: 350px;
+    color:rgb(59, 88, 152);
+  }
+  .selector{
+    
+    width: 350px;
+  }
+ .progress{
+   z-index: 1 ;
+ }
 }
