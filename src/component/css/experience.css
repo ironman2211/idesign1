@@ -1,8 +1,9 @@
 .experience {
-  /* width: 100%; */
-  margin: 1.1em 1em;
   display: flex;
   overflow-x: hidden;
+  height: 90vh;
+  background-color: #3b5998 ;
+  width: 100%;
 }
 
 .experience_left {
@@ -12,7 +13,7 @@
   align-items: center;
   justify-content: center;
   width: 40%;
-  height: 80vh;
+  height: 90vh;
   border-radius: 2px;
 }
 
@@ -26,9 +27,9 @@
 }
 
 .bar {
-  width: 4px;
-  height: 70px;
-  background-color: gray;
+  width: 14px;
+  height: 90px;
+  background-color:#6B8CD1  ;
   text-align: center;
   border-radius: 1px;
   margin: 0 22px;
@@ -36,29 +37,44 @@
 
 .progress p {
   margin: 1em;
+  color: #6B8CD1;
 }
 
 .experience_right {
-  padding: 1em;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
+  gap: 10px;
   width: 60%;
   background-color: #d8deea;
-  height: 80vh;
+  height: 90vh;
   border-radius: 2px;
+}
+.experience_right span {
+  font-size: 18px;
+  font-weight: 500;
+  color:rgba(59, 89, 152, 0.75);
+
+  margin: 1em;
+  width: 500px;
+  margin-top: 200px;
 }
 
 .experience_right p {
   font-size: 1.6em;
   font-weight: 500;
   margin: 1em;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  
+  color:rgb(59, 88, 152);
 }
-
+.progress.active p{
+  color: white;
+}
 .selector {
   max-width: 600px;
-  width: 50%;
+  width: 500px;
   display: flex;
   justify-content: space-between;
 }
@@ -68,8 +84,10 @@
   margin-right: 1em;
   border: none;
   border-radius: 5px;
-  width: 70%; 
+  width: 75%; 
   font-size: 1.1em;
+  display: flex;
+  justify-content: flex-end;
 }
 
 option{
@@ -85,7 +103,8 @@ option{
   letter-spacing: 1;
   border-radius: 5px;
   width: 25%;
-  background-color: #3b5998;
+  background-color: #f8faff;
+  height: 45px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -132,6 +151,10 @@ option{
     z-index: 2;
     height: 4px;
     margin: 22px -1px;
+  }
+  .bar.complete{
+    
+  background-color:green  ;
   }
 
 .experience_right p {

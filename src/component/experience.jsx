@@ -16,42 +16,60 @@ class Experience extends Component {
       <div className="experience">
         <div className="experience_left">
           <div className="progressBar">
-            <div className="progress">
+            <div className="progress active">
               <div
                 style={{
                   padding: "1em",
                   width: "15px",
                   height: "15px",
-                  border: "1px solid green",
+                  border: "1px solid white",
+                  background: "white",
                   textAlign: "center",
                   borderRadius: "100%",
+                  color:"#6B8CD1",
                 }}
               >
                 1
               </div>
               <p>Experience</p>
             </div>
-            <div
-              className="bar"
-            ></div>
+            <div className="bar"></div>
             <div className="progress">
               <div
                 style={{
                   padding: "1em",
                   width: "15px",
                   height: "15px",
-                  border: "1px solid grey",
+                  background:"#6B8CD1",
+                  border: "1px solid #6B8CD1",
                   textAlign: "center",
                   borderRadius: "100%",
+                  color:"white",
                 }}
               >
                 2
               </div>
               <p>Zoom Consultant</p>
             </div>
-            <div
-              className="bar"
-            ></div>
+            <div className="bar"></div>
+            <div className="progress">
+              <div
+                style={{
+                  padding: "1em",
+                  width: "15px",
+                  height: "15px",
+                  border: "1px solid #6B8CD1",
+                  textAlign: "center",
+                  borderRadius: "100%",
+                  background:"#6B8CD1",
+                  color:"white",
+                }}
+              >
+                3
+              </div>
+              <p>Design Fees per Sqft</p>
+            </div>
+            <div className="bar"></div>
             <div className="progress">
               <div
                 style={{
@@ -61,17 +79,22 @@ class Experience extends Component {
                   border: "1px solid grey",
                   textAlign: "center",
                   borderRadius: "100%",
+                  background:"#6B8CD1",
+                  color:"white",
                 }}
               >
-                3
+                4
               </div>
-              <p>Design Fees</p>
+              <p>Design Fees per Room</p>
             </div>
           </div>
         </div>
         <div className="experience_right">
+          <span>
+            Please Answer a few question as we take you to the dashboard (it will take 2 mins)
+          </span>
           <p>
-            How nuch <strong>experience</strong> do you have ?
+            How much <strong>experience</strong> do you have ?
           </p>
           <div className="selector">
             <select name="company" id="company">

@@ -1,3 +1,10 @@
+.container{
+  height: 90vh;
+  width: 100%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
 h3 {
   margin: 0.2em;
 }
@@ -7,7 +14,9 @@ p {
 
 .project-page {
   width: 80%;
-  margin: 0 auto;
+  margin-top:200px ;
+  margin: auto auto;
+  box-sizing: border-box  ;
 }
 
 .project{
@@ -400,4 +409,37 @@ p {
       margin-right: 0.2em;
   }
 
+}
+.gbutton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:5px;
+}
+.gbutton span{
+  color: black;
+
+}
+.gimage{
+  height: 25px;
+  width:25px; 
+}
+.eye{
+  
+  position: fixed; 
+  left: 960px;
+  top:400px
+}
+@media (max-width: 415px){
+
+  .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: space-between;
+
+  }
+  .editt button{
+    width:10px;
+  }
 }
